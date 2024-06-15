@@ -12,7 +12,6 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://reqres.in/api',
     specPattern: 'cypress/api/**/*.cy.{js,jsx,ts,tsx}',
-    reporter: 'cypress-mochawesome-reporter',
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on)
     },

@@ -23,7 +23,13 @@ Caso a ideia seja visualizar os testes ocorrendo, execute: `npm run cy:open`
 
 Após executar o comando, uma tela do Cypress abrirá para selecionarmos o browser que irá executar os testes. Selecione o browser da sua escolha e clique em "Start E2E Testing in {Browser}".
 
+![Tela do Cypress](imagens/1.png)
+
 Em seguida o browser será iniciado, seleciona o arquivo "users.cy.js". Os testes serão executados.
+
+![Selecionando os cenários](imagens/2.png)
+
+![Execução dos testes](imagens/3.png)
 
 
 ## Explicando algumas bibliotecas utilizadas
@@ -43,8 +49,14 @@ Para executar a pipeline:
  2. Selecione o Workflow "Pipeline de testes";
  3. Depois clique em "Run workflow".
 
+![Executando a pipeline](imagens/4.png)
+
 Após a execução da pipeline o relatório será publicado automaticamente. Para visualizá-lo:
 1. Vá para "Actions";
 2. Selecione o Workflow "pages-build-deployment";
 3. Selecione a última execução;
 4. Clique no link do job "Deploy"
+
+![Clicando no link do relatório](imagens/5.png)
+
+![Visualização do relatório](imagens/6.png)

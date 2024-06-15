@@ -2,12 +2,12 @@ name: Pipeline de testes
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    pull_request:
+    push:
       branches:
-        - master
+        - main
+      pull_request:
+        branches:
+          - main
 
 jobs:
   test:
@@ -26,3 +26,9 @@ jobs:
 
       - name: Executar os testes
         run: npx cypress run
+
+      - name: Publicar relatório
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: 'cypress/reports/html'

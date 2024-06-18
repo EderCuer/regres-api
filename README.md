@@ -6,7 +6,8 @@
 [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress): 13.11\
 [Faker JS](https://fakerjs.dev/guide/): 8.4.1\
 [Cypress Mochawesome Reporter](https://www.npmjs.com/package/cypress-mochawesome-reporter): 3.8.2\
-[Cypress Plugin API](https://github.com/filiphric/cypress-plugin-api): 2.11.1
+[Cypress Plugin API](https://github.com/filiphric/cypress-plugin-api): 2.11.1\
+[Chai JSON Schema](https://www.chaijs.com/plugins/chai-json-schema/): 1.5.1
 
 ## Configurando o projeto
 
@@ -38,6 +39,8 @@ Em seguida o browser será iniciado, seleciona o arquivo "users.cy.js". Os teste
 [Cypress Mochawesome Reporter](https://www.npmjs.com/package/cypress-mochawesome-reporter): utilizada para gerar o relatório dos testes;
 
 [Cypress Plugin API](https://github.com/filiphric/cypress-plugin-api): facilita a visualização dos testes de API. Com ela conseguimos ver o response, headers, cookies e o body da requisição.
+
+[Chai JSON Schema](https://www.chaijs.com/plugins/chai-json-schema/): para realizar a validação do json da response dos testes.
 
 ## Integração com a pipeline
 Os testes foram integrados à pipeline. Dessa forma, é possível executá-los e visualizar seu relatório pelo Github Pages.

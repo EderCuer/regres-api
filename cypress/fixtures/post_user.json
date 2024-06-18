@@ -1,0 +1,19 @@
+{
+  "title": "Post user Schema",
+  "type": "object",
+  "required": ["createdAt"],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "PUT user Schema",
+  "type": "object",
+  "required": ["updatedAt"],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  }
+}

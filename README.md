@@ -63,3 +63,71 @@ Após a execução da pipeline o relatório será publicado automaticamente. Par
 ![Clicando no link do relatório](imagens/5.png)
 
 ![Visualização do relatório](imagens/6.png)
+
+_______________________
+
+# API Automation Project [Reqres](https://reqres.in/)
+
+## Libraries used and their versions
+[NPM](https://docs.npmjs.com/getting-started): 8.19.3  
+[Node JS](https://nodejs.org/en): 19.1  
+[Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress): 13.11  
+[Faker JS](https://fakerjs.dev/guide/): 8.4.1  
+[Cypress Mochawesome Reporter](https://www.npmjs.com/package/cypress-mochawesome-reporter): 3.8.2  
+[Cypress Plugin API](https://github.com/filiphric/cypress-plugin-api): 2.11.1  
+[Chai JSON Schema](https://www.chaijs.com/plugins/chai-json-schema/): 1.5.1  
+
+## Setting up the project
+
+1. Clone the project: `git clone git@github.com:EderCuer/regres-api.git`
+2. Access the project directory and run: `npm install`
+
+## Running the tests
+
+### Headless mode
+To run the tests in the background, without opening the browser, execute: `npx cypress run`
+
+### Headed mode
+If you want to see the tests running, execute: `npm run cy:open`
+
+After running the command, a Cypress window will open for you to select the browser that will run the tests. Select the browser of your choice and click on "Start E2E Testing in {Browser}".
+
+![Cypress Screen](imagens/1.png)
+
+Then the browser will start, select the file "users.cy.js". The tests will run.
+
+![Selecting scenarios](imagens/2.png)
+
+![Running tests](imagens/3.png)
+
+## Explaining some libraries used
+[Faker JS](https://fakerjs.dev/guide/): generates test data, so we don't have to worry about choosing names and we can make this task automatic and dynamic;
+
+[Cypress Mochawesome Reporter](https://www.npmjs.com/package/cypress-mochawesome-reporter): used to generate the test report;
+
+[Cypress Plugin API](https://github.com/filiphric/cypress-plugin-api): makes it easier to visualize API tests. With it, we can see the response, headers, cookies, and the request body.
+
+[Chai JSON Schema](https://www.chaijs.com/plugins/chai-json-schema/): used to validate the JSON response of the tests.
+
+## Integration with the pipeline
+The tests were integrated into the pipeline. This way, it is possible to run them and view their report through GitHub Pages.
+
+The idea was to make it as similar as possible to real applications.
+
+To run the pipeline:
+1. Go to "Actions";
+2. Select the "Test Pipeline" Workflow;
+3. Then click on "Run workflow".
+
+![Running the pipeline](imagens/4.png)
+
+After running the pipeline, the report will be published automatically. To view it:
+1. Go to "Actions";
+2. Select the "pages-build-deployment" Workflow;
+3. Select the latest run;
+4. Click on the job link "Deploy".
+
+![Clicking on the report link](imagens/5.png)
+
+![Viewing the report](imagens/6.png)
+
